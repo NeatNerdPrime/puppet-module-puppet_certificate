@@ -90,6 +90,8 @@ generating a new certificate of the same name. To use this option effectively,
 it is required that a rule be added to auth.conf on the CA to allow this. For
 example, to allow nodes to revoke and clean their own certificates.
 
+If you use [`puppet-puppet` from theforeman](https://github.com/theforeman/puppet-puppet) to manage your server, add `puppet::server_ca_client_self_delete: true` to your hiera data.
+
 Example auth.conf rule:
 
 ```
